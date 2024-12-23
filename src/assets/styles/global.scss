@@ -1,0 +1,128 @@
+/**
+* 通用css样式布局处理
+*/
+
+:root {
+  --title-color: #364A63;
+  --default-font-color: #8094AE;
+  --number-color: #7F8DFF;
+  --secondary: #364a63;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  font-size: 16px;
+  font-family: Roboto, sans-serif, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  overflow: auto;
+  //-moz-osx-font-smoothing: grayscale;
+  //-webkit-font-smoothing: antialiased;
+  //text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+ol, ul, li {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+th {
+  text-align: inherit
+}
+
+:focus, a:focus {
+  outline: none;
+  -moz-outline-style: none;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+div:focus {
+  outline: none;
+}
+
+img {
+  display: inline-block;
+  border: 0;
+  vertical-align: middle;
+}
+
+input {
+  border: 0;
+  padding: 0;
+  outline: none;
+}
+
+i {
+  display: inline-block;
+  vertical-align: middle;
+}
+//
+//::-webkit-scrollbar {
+//  -webkit-appearance: none;
+//  width: 15px;
+//  height: 15px;
+//}
+//
+//::-webkit-scrollbar-thumb {
+//  border: 2px solid white;
+//  background-color: rgba(0, 0, 0, .22);
+//  border-radius: 10px;
+//}
+//
+//::-webkit-scrollbar-thumb:hover {
+//  background-color: rgba(0, 0, 0, .5);
+//}
+//
+//::-webkit-scrollbar-track {
+//  background-color: #F5F5F5;
+//}
+//
+//::-webkit-scrollbar-corner {
+//  display: none;
+//}

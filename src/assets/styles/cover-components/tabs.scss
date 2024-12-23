@@ -1,0 +1,26 @@
+.el-tabs {
+  border-radius: 4px;
+  border: 1px solid #DBDFEA;
+
+  .el-tabs__header {
+    margin: 0;
+  }
+
+  .el-tabs__nav-scroll {
+    padding: 0 25px;
+  }
+
+  .el-tabs__nav-wrap::after {
+    height: 1px;
+    background-color: #DBDFEA;
+  }
+
+  .el-tabs__item {
+    height: 55px;
+    line-height: 55px;
+
+    svg.svg-icon {
+      font-size: 18px;
+    }
+  }
+}

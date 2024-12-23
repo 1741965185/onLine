@@ -1,0 +1,88 @@
+{
+  "name": "npayadmin",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build --mode staging",
+    "build:prod": "vue-cli-service build --mode production",
+    "build:stage": "vue-cli-service build --mode staging",
+    "build:pre": "vue-cli-service build --mode pre",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "@okxweb3/coin-aptos": "^1.0.0",
+    "@okxweb3/coin-base": "^1.0.9",
+    "@okxweb3/coin-bitcoin": "^1.0.23",
+    "@okxweb3/coin-ethereum": "^1.0.3",
+    "@okxweb3/coin-cosmos": "^1.0.0",
+    "@okxweb3/coin-eos": "^1.0.0",
+    "@okxweb3/coin-solana": "^1.0.0",
+    "@okxweb3/coin-stacks": "^1.0.0",
+    "@okxweb3/coin-starknet": "^1.0.0",
+    "@okxweb3/coin-sui": "^1.0.1",
+    "@okxweb3/coin-tron": "^1.0.0",
+    "@okxweb3/coin-zkspace": "^1.0.0",
+    "@okxweb3/crypto-lib": "^1.0.0",
+    "assert": "^2.1.0",
+    "axios": "^0.21.1",
+    "babel-plugin-transform-remove-console": "^6.9.4",
+    "buffer": "^6.0.3",
+    "core-js": "^3.6.5",
+    "crypto-browserify": "^3.12.0",
+    "crypto-js": "^4.2.0",
+    "dayjs": "^1.10.6",
+    "echarts": "^5.1.1",
+    "element-ui": "^2.15.2",
+    "js-cookie": "2.2.1",
+    "lodash": "^4.17.21",
+    "md5": "^2.3.0",
+    "qrcode.vue": "1.7.0",
+    "v-distpicker": "^1.2.12",
+    "vue": "^2.6.14",
+    "vue-i18n": "^8.27.0",
+    "vue-qrcode": "^2.2.0",
+    "vue-router": "^3.2.0",
+    "vuex": "^3.4.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-router": "~4.5.0",
+    "@vue/cli-plugin-vuex": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "babel-eslint": "^10.1.0",
+    "compression-webpack-plugin": "^6.1.1",
+    "eslint": "^6.7.2",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-vue": "^6.2.2",
+    "less": "^3.0.4",
+    "less-loader": "^5.0.0",
+    "prettier": "^2.2.1",
+    "sass": "1.32.0",
+    "sass-loader": "10.1.0",
+    "svg-sprite-loader": "5.1.1",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended",
+      "@vue/prettier"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}

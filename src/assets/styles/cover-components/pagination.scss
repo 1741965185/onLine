@@ -1,0 +1,72 @@
+.el-pagination {
+  width: 100%;
+
+  .btn-prev, .btn-next {
+    width: 54px;
+    height: 36px;
+
+    span {
+      height: 36px !important;
+      line-height: 36px !important;
+    }
+  }
+
+  .el-pager li {
+    width: 37px;
+    height: 36px;
+    line-height: 36px;
+  }
+
+  .btn-prev,
+  .btn-next,
+  .el-pager li {
+    margin: 0 !important;
+    margin-left: -1px !important;
+    background-color: #fff !important;
+    border-radius: 0 !important;
+    border: 1px solid #e5e9f2;
+  }
+
+  .btn-prev {
+    margin-left: 0 !important;
+    border-left: 1px solid #e5e9f2;
+    border-radius: 4px 0 0 4px !important;;
+  }
+
+  .btn-next {
+    border-radius: 0px 4px 4px 0 !important;
+  }
+
+  .el-pager .more::before {
+    line-height: 36px;
+  }
+
+  &.is-background .btn-prev,
+  &.is-background .btn-next,
+  &.is-background .el-pager li {
+    font-weight: normal;
+  }
+
+  &.is-background .el-pager li:not(.disabled):hover {
+    color: #465fff !important;
+    background-color: #ebeef2 !important;
+  }
+
+  &.is-background .el-pager li:not(.disabled).active {
+    font-weight: 500;
+    color: #FFF !important;
+    background-color: var(--number-color) !important;
+    border-color: var(--number-color) !important;
+  }
+
+  .el-pagination__jump,
+  .el-pagination__total {
+    height: 36px !important;
+    line-height: 36px !important;
+    float: right;
+    margin: 0;
+  }
+  .el-pagination__jump {
+    margin-right: 10px;
+  }
+}

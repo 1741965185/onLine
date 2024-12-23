@@ -1,0 +1,64 @@
+.el-table {
+  font-weight: 500;
+
+  td, th {
+    text-align: center !important;
+  }
+
+  th {
+    font-size: 13px;
+    padding: 11px 0 !important;
+
+    > div {
+      line-height: 1 !important;
+    }
+  }
+
+  .el-table__header-wrapper th,
+  .el-table__fixed-header-wrapper th {
+    background-color: #fff;
+    height: 38px;
+  }
+
+  /* table 中 select - checkbox 选择框 */
+  .el-checkbox__inner {
+    width: 18px;
+    height: 18px;
+    border: 2px solid #dbdfea;
+    border-radius: 4px;
+
+    &:hover {
+      border-color: var(--number-color);
+    }
+
+    &::after {
+      border: 2px solid #FFFFFF;
+      height: 8px;
+      left: 4px;
+      top: 1px;
+      width: 4px;
+      border-top-width: 0;
+      border-left-width: 0;;
+    }
+  }
+
+  .el-checkbox__input.is-indeterminate .el-checkbox__inner::before {
+    height: 2px;
+    transform: scale(1);
+    left: 3px;
+    right: 0;
+    top: 6px;
+    width: 8px;
+  }
+
+  .el-checkbox__input.is-checked .el-checkbox__inner,
+  .el-checkbox__input.is-indeterminate .el-checkbox__inner {
+    background-color: var(--number-color);
+    border-color: var(--number-color);
+  }
+
+  .el-checkbox__input.is-focus .el-checkbox__inner {
+    border-color: var(--number-color);
+    box-shadow: 0 0 0 3px rgba(101, 118, 225, .1);
+  }
+}

@@ -1,0 +1,22 @@
+/* 常规button */
+.airclick-button-default.el-button.el-button--default {
+  color: #526484;
+  background-color: #F5F6FA;
+  border: 1px solid #DBDFEA;
+  padding: 10px 30px;
+  transition: color 0.15s ease-in-out,
+  background-color 0.15s ease-in-out,
+  border-color 0.15s ease-in-out,
+  box-shadow 0.15s ease-in-out;
+
+  &:hover,
+  &:focus {
+    color: #101924;
+    background-color: #ccd3e5;
+    border-color: #c3cce1;
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 3px rgba(197, 202, 211, 0.5);
+  }
+}

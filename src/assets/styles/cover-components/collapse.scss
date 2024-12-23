@@ -1,0 +1,31 @@
+.el-collapse {
+  border-top: none;
+  border-bottom: none;
+
+  h4 {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--secondary);
+    line-height: 18px;
+  }
+
+  .el-collapse-item__header {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--secondary);
+    line-height: 26px;
+    border: none;
+
+    .el-collapse-item__arrow {
+      margin: 0 8px 0 4px;
+    }
+
+    &:focus:not(:hover) {
+      color: var(--secondary);
+    }
+  }
+
+  .el-collapse-item__wrap {
+    border-bottom: none;
+  }
+}

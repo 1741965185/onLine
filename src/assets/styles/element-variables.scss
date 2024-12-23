@@ -1,0 +1,28 @@
+/* 改变主题色变量 */
+$--color-primary: #6576FF;
+$--color-success: #1EE0AC;
+$--color-warning: #F4BD0E;
+$--color-danger: #E85347;
+$--color-info: #09C2DE;
+
+/* 改变border */
+$--border-color-base: #DBDFEA;
+$--border-radius-small: 4px;
+
+/**
+ * title #364A63
+ * default #8094AE
+ * number #6576FF
+ **/
+
+/* 改变text color */
+$--color-text-primary: #526484; // base + body
+$--color-text-secondary: #526484;
+$--color-text-regular: #8094AE;
+
+//// #6e82a5  #526484
+
+/* 改变 icon 字体路径变量，必需 */
+$--font-path: '~element-ui/lib/theme-chalk/fonts';
+
+@import "~element-ui/packages/theme-chalk/src/index";

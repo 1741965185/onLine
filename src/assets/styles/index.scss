@@ -1,0 +1,15 @@
+@import './variables.scss';
+@import './mixin.scss';
+@import './transition.scss';
+//@import './element-ui.scss';
+@import './sidebar.scss';
+
+#app {
+  height: 100%;
+}
+
+//main-container全局样式
+.app-container {
+  padding: 64px 0 32px 0;
+  min-height: calc(100vh - 64px);
+}

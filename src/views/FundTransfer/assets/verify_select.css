@@ -1,0 +1,191 @@
+.page {
+  position: relative;
+  overflow: hidden;
+}
+
+.section_1 {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.box_1 {
+  background-color: rgba(255, 255, 255, 0.8);
+
+}
+
+.section_2 {
+  height: 64px;
+  padding: 17px 0 0 121px;
+  box-sizing: border-box;
+}
+
+.label_1 {
+  width: 31px;
+  height: 31px;
+  cursor: pointer;
+  /*margin-top: 4px;*/
+}
+
+.block_1 {
+  background-color: rgba(255, 255, 255, 1);
+  width: 136px;
+  height: 51px;
+  margin-left: 121px;
+}
+
+.text_1 {
+  width: 47px;
+  height: 16px;
+  overflow-wrap: break-word;
+  color: rgba(82, 100, 132, 1);
+  font-size: 14px;
+  font-weight: NaN;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 16px;
+  margin: 12px 0 0 795px;
+}
+
+.thumbnail_1 {
+  width: 8px;
+  height: 6px;
+  margin: 18px 0 0 8px;
+}
+
+.label_2 {
+  width: 32px;
+  height: 32px;
+  margin: 4px 0 0 20px;
+}
+
+.image_1 {
+  width: 1440px;
+  height: 1px;
+}
+
+.section_3 {
+  /*position: relative;*/
+  /*margin-bottom: 1px;*/
+  align-items: center;
+
+}
+
+.text_2 {
+  margin-top: 35px;
+
+  font-family: PingFangSC, PingFang SC;
+  font-weight: 600;
+  font-size: 28px;
+  color: #364A63;
+  line-height: 36px;
+  text-align: right;
+  font-style: normal;
+  overflow-wrap: break-word;
+
+}
+
+.text_3 {
+  width: 373px;
+  height: 20px;
+  overflow-wrap: break-word;
+  margin-top: 12px;
+
+  font-family: PingFangSC, PingFang SC;
+  font-weight: 400;
+  font-size: 14px;
+  color: #364A63;
+  line-height: 20px;
+  text-align: left;
+  font-style: normal;
+}
+
+.box_5 {
+  /*width: 870px;*/
+  /*height: 406px;*/
+  margin: 90px 0 200px 0;
+}
+
+.group_1 {
+  /*border-radius: 16px 100px 16px 16px;*/
+  background-image: url(./img/05f2710f5c9744e7a33730d8f5e7aeeb_mergeImage.png);
+  width: 390px;
+  height: 426px;
+  background-size: 390px 426px; /* 宽度为200像素，高度为150像素 */
+  margin-right: 140px;
+}
+
+.text_4 {
+  /*text-decoration-line: underline;*/
+  cursor: pointer;
+  overflow-wrap: break-word;
+  color: rgba(127, 141, 255, 1);
+  font-size: 24px;
+  font-family: PingFangSC-Semibold;
+  font-weight: 600;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 33px;
+  margin: 95px 0 0 60px;
+}
+
+.image_2 {
+  width: 198px;
+  height: 269px;
+  margin: 8px 0 1px 0;
+}
+
+.group_2 {
+  border-radius: 16px 100px 16px 16px;
+  background-image: url(./img/c15dcba11a8a4cdf836ab0e208aa5750_mergeImage.png);
+  width: 390px;
+  height: 426px;
+  background-size: 390px 426px; /* 宽度为200像素，高度为150像素 */
+
+}
+
+.text_5 {
+  cursor: pointer;
+  overflow-wrap: break-word;
+  color: rgba(54, 74, 99, 1);
+  font-size: 24px;
+  font-family: PingFangSC-Semibold;
+  font-weight: 600;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 33px;
+  margin: 95px 0 0 60px;
+}
+.text_5:hover {
+  cursor: pointer;
+  overflow-wrap: break-word;
+  color: rgba(127, 141, 255, 1);
+  font-size: 24px;
+  font-family: PingFangSC-Semibold;
+  font-weight: 600;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 33px;
+  margin: 95px 0 0 60px;
+  text-decoration-line: underline;
+
+}
+.image_3 {
+  width: 198px;
+  height: 269px;
+  margin: 8px 0 1px 0;
+}
+
+.image_4 {
+  position: absolute;
+  left: 414px;
+  top: 373px;
+  width: 246px;
+  height: 246px;
+}
+
+.image_5 {
+  position: absolute;
+  left: 944px;
+  top: 373px;
+  width: 246px;
+  height: 246px;
+}

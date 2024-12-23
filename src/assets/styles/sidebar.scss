@@ -1,0 +1,219 @@
+#app {
+  .main-container {
+    min-height: calc(100vh - 64px);
+    padding: 0 5% 0 90px;
+    position: relative;
+    min-width: 1000px;
+  }
+
+  .sidebar-container {
+    -webkit-transition: width .28s;
+    transition: width 0.28s;
+    //width: $sideBarWidth !important;
+    background-color: $menuBg;
+    float: left;
+    z-index: 1001;
+    overflow: hidden;
+    border: none;
+    padding: 32px 0 47px 0;
+    //position: fixed;
+    // reset element-ui css
+    .horizontal-collapse-transition {
+      transition: 0s width ease-in-out, 0s padding-left ease-in-out, 0s padding-right ease-in-out;
+    }
+
+    .scrollbar-wrapper {
+      overflow-x: hidden !important;
+    }
+
+    .el-scrollbar__bar.is-vertical {
+      right: 0px;
+    }
+
+    .el-scrollbar {
+      height: 100%;
+    }
+
+    &.has-logo {
+      .el-scrollbar {
+        height: calc(100% - 64px);
+      }
+    }
+
+    .is-horizontal {
+      display: none;
+    }
+
+    a {
+      display: inline-block;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .svg-icon {
+      margin-right: 16px;
+    }
+
+    .el-menu {
+      border: none;
+      height: 100%;
+      width: 100% !important;
+    }
+
+    /* 有子菜单的导航和无子菜单的导航 */
+    .el-menu-item, .el-submenu__title {
+      overflow: hidden !important;
+      text-overflow: ellipsis !important;
+      white-space: nowrap !important;
+      font-size: 15px;
+      display: flex;
+      align-items: center;
+      color: #6F82A5;
+
+      svg.svg-icon {
+        font-size: 20px;
+        margin-right: 14px;
+      }
+
+      &:hover {
+        background-color: transparent;
+        color: var(--number-color);
+      }
+    }
+
+    .el-submenu__title {
+      span {
+        font-weight: bold;
+      }
+    }
+
+    .is-active .el-submenu__title, .router-link-active .submenu-title-noDropdown {
+      color: var(--number-color);
+    }
+
+    // menu hover
+    .submenu-title-noDropdown {
+      //padding-left: 0 !important;
+
+      &:hover {
+        background-color: transparent !important;
+      }
+
+      span {
+        font-weight: bold;
+      }
+    }
+
+    & .theme-dark .is-active > .el-submenu__title {
+      color: $subMenuActiveText !important;
+    }
+
+    & .nest-menu .el-submenu > .el-submenu__title,
+    & .el-submenu .el-menu-item {
+      color: #6E82A5;
+      line-height: 30px;
+      height: 30px;
+      font-size: 14px;
+
+      &:hover {
+        color: var(--number-color);
+        background-color: transparent !important;
+      }
+    }
+
+    & .el-submenu .el-menu-item {
+      padding: 0 34px !important;
+    }
+
+    & .theme-dark .nest-menu .el-submenu > .el-submenu__title,
+    & .theme-dark .el-submenu .el-menu-item {
+      background-color: $subMenuBg !important;
+
+      &:hover {
+        background-color: $subMenuHover !important;
+      }
+    }
+
+    .el-menu-item {
+      height: 40px;
+      line-height: 40px;
+
+      &.is-active {
+        color: var(--number-color);
+      }
+    }
+
+    .el-menu-vertical-demo {
+      > div {
+        //margin-left: 24px;
+
+        p.topTitle {
+          //margin-top: 40px;
+          //letter-spacing: 0;
+        }
+      }
+
+      > div:first-child {
+        p.topTitle {
+          //margin-top: 0;
+        }
+      }
+
+      .el-menu-item {
+        width: 240px;
+        margin-bottom: 5px;
+        height: 44px;
+        border-radius: 8px;
+        &:hover, &:focus {
+          background-color: #F3F6FD;
+        }
+      }
+    }
+    .el-menu-item.is-active，.el-submenu .el-menu-item.is-active {
+      background-color: red !important;
+    }
+    /* 还原设计稿 下拉箭头更改朝向 */
+    .el-submenu__icon-arrow {
+      transform: rotateZ(-90deg);
+      -ms-transform: rotateZ(-90deg);
+      -moz-transform: rotateZ(-90deg);
+      -webkit-transform: rotateZ(-90deg);
+      -o-transform: rotateZ(-90deg);
+    }
+
+    /* 还原设计稿 下拉箭头更改朝向 */
+    .el-submenu.is-opened > .el-submenu__title .el-submenu__icon-arrow {
+      transform: rotateZ(0deg);
+      -ms-transform: rotateZ(0deg);
+      -moz-transform: rotateZ(0deg);
+      -webkit-transform: rotateZ(0deg);
+      -o-transform: rotateZ(0deg);
+    }
+  }
+
+  .topTitle {
+    font-size: 12px;
+    font-weight: bold;
+    color: var(--default-font-color);
+    line-height: 14px;
+    letter-spacing: 3px;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+}
+
+.el-submenu {
+  & > .el-submenu__title {
+    padding: 0 50px 0 0 !important;
+    height: 40px;
+    line-height: 40px;
+
+  }
+
+  .el-submenu__icon-arrow {
+    font-size: 15px;
+    margin-top: -8px;
+    font-weight: 600;
+    right: 50px;
+  }
+}
